@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_super_hero_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name"/>
+    <TextView
+        android:id="@+id/tv_super_hero_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:text="Mobile"/>
+    <TextView
+        android:id="@+id/tv_super_hero_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_super_hero_name"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

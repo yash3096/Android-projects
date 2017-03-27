@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_welcome"
+        android:text="WELCOME TO GREENCITI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="20sp"
+        android:textColor="#ff0000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WASTE DONOR"
+        android:id="@+id/b_wastedonor"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="135dp"
+        android:layout_alignRight="@+id/b_wastecollector"
+        android:layout_alignEnd="@+id/b_wastecollector"
+        android:layout_alignLeft="@+id/b_wastecollector"
+        android:layout_alignStart="@+id/b_wastecollector"
+        android:onClick="onDonor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WASTE COLLECTOR"
+        android:onClick="onCollector"
+        android:id="@+id/b_wastecollector"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

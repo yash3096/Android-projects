@@ -1,0 +1,20 @@
+<resources>
+    <string name="feedback">Feedback</string>
+    <string name="download">Download</string>
+    <string name="app_name">Dark Knight</string>
+    <string name="msg">good mrng</string>
+    <string name="username">Username</string>
+    <string name="download_complete">Download Complete...</string>
+    <string name="password">Password</string>
+
+    <string name="gender">Gender</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="register">Register</string>
+    <string name="district">District</string>
+    <string name="tv_sms">SMS elert when Joker strikes</string>
+    <string name="yes">Y</string>
+    <string name="no">N</string>
+    <string name="sel_color">Select Color</string>
+</resources>

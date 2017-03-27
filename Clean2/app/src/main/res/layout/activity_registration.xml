@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    tools:context="secomps.djsce.clean.RegistrationActivity"
+    android:id="@+id/in">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_name"
+        android:hint="Name"
+        android:layout_alignParentTop="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_password"
+        android:layout_below="@+id/et_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:hint="PASSWORD" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_username"
+        android:layout_below="@+id/et_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/et_name"
+        android:layout_alignEnd="@+id/et_name"
+        android:hint="USERNAME" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:id="@+id/et_number"
+        android:layout_below="@id/et_password"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/et_number"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:minLines="5"
+        android:maxLines="10"
+        android:id="@+id/et_address"
+        android:layout_alignRight="@+id/et_password"
+        android:layout_alignEnd="@+id/et_password"
+        android:hint="ADDRESS" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:id="@+id/b_register"
+        android:layout_below="@id/et_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="onRegister" />
+
+</RelativeLayout>

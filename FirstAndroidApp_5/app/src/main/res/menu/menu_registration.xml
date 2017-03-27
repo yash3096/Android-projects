@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/mi_register"
+    android:icon="@android:drawable/ic_menu_save"
+    app:showAsAction="always"
+    android:onClick="onRegister"
+    android:title="@string/register"/>
+    <item android:id="@+id/mi_contacts"
+        android:title="Contacts"
+        app:showAsAction="never"
+        android:onClick="onContacts"
+        />
+    <item
+        android:id="@+id/mi_thoughts"
+        android:title="Thoughts"
+        android:onClick="onThoughts"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/mi_settings"
+        android:title="Settings"
+        android:onClick="onSettings"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/mi_newFindings"
+        android:title="New Entry"
+        android:onClick="onAdd"
+        app:showAsAction="never"></item>
+</menu><!--COMMENT AND REMOVE BUTTONS AFTER CREATING THESE ACTION ITEMS-->

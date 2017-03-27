@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    tools:context="secomps.djsce.clean.LoggedInActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/tv_welcome"
+    android:text="Welcome"
+    android:textColor="#00ff00"
+    />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_welcome"
+        android:text="Enter Waste Details"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_details"
+        android:textSize="20sp"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_arena"
+    android:text="Select Arena"
+    android:layout_below="@id/tv_details"
+    android:textSize="20sp"
+    android:layout_marginTop="30dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_arena"
+        android:id="@+id/spinner_arena"
+        android:layout_below="@id/tv_details"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Address"
+        android:layout_below="@id/spinner_arena"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Waste"
+        android:id="@+id/tv_type"
+        android:layout_below="@id/et_address"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_typeofwaste"
+        android:layout_below="@id/et_address"
+        android:layout_toRightOf="@id/tv_type"
+        android:layout_marginTop="30dp"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Approximate Quantity"
+        android:layout_below="@id/tv_type"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/et_quantity"/>
+    <RadioGroup
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rg_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_below="@id/et_quantity"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rb_donate"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="donate"
+            android:checked="true"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_sell"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sell"
+            android:layout_marginLeft="20dp"
+            />
+    </RadioGroup>
+</RelativeLayout>
