@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ClientLibrary</string>
+    <string name="app_id">INSERT YOUR APPID</string>
+    <string name="app_key">INSERT YOUR APP KRY</string>
+</resources>

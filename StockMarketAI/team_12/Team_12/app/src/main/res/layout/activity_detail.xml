@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_date"
+        android:background="@color/white"
+        android:id="@+id/iv_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PRICE"
+        android:textSize="27dp"
+        android:textColor="#FF9800"
+        android:layout_below="@id/iv_line"
+        android:id="@+id/tv_price_detail"
+        android:layout_marginTop="8dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_previous_detail"
+        android:background="@color/white"
+        android:id="@+id/linetp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CHANGE"
+        android:textSize="25dp"
+        android:id="@+id/tv_change_detail"
+        android:layout_alignTop="@+id/tv_price_detail"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PREVIOUS"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_previous_detail"
+        android:layout_below="@id/tv_price_detail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Today&apos;s LOW/HIGH"
+        android:id="@+id/tv_low_high"
+        android:textSize="18dp"
+
+        android:textColor="@color/white"
+        android:layout_below="@+id/tv_previous_detail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="COMPANY NAME"
+        android:textColor="#FF9800"
+        android:textSize="20dp"
+        android:id="@+id/tv_company_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/tv_date"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tv_company_detail"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Start Date"
+        android:id="@+id/btn_date"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showDatePickerDialog"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/gv_graph"
+        android:layout_below="@id/tv_low_high"
+        android:layout_above="@id/btn_date"
+        android:layout_width="match_parent"
+
+        android:padding="5dp"
+
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_date"
+        android:layout_below="@id/gv_graph"
+        android:id="@+id/tv_startDate"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_endDate"
+        android:layout_below="@id/gv_graph"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+
+        />
+</RelativeLayout>

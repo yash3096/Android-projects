@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_list_item_stocks"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Company Name"
+        android:textColor="@color/white"
+        android:id="@+id/tv_li_company"
+        android:layout_toLeftOf="@+id/tv_li_price"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="4dp"
+         />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Price"
+
+        android:layout_alignTop="@+id/tv_li_company"
+        android:layout_toLeftOf="@+id/tv_li_change"
+        android:layout_toStartOf="@+id/tv_li_change"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:padding="4dp"
+        android:id="@+id/tv_li_price"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Change"
+        android:textColor="@color/white"
+        android:id="@+id/tv_li_change"
+
+        android:padding="4dp"
+
+        android:layout_alignTop="@+id/tv_li_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
